@@ -1459,7 +1459,157 @@ footer{position:relative;z-index:10;padding:28px 60px;border-top:1px solid var(-
   color: var(--vl);
   z-index: 5;
 }
-</style>
+ /* new added badge section*/
+</div>
+
+  <!-- BADGES SECTION STARTS HERE -->
+  <style>
+  .badges-section
+  {/* ── BADGES SECTION STYLES ── */
+.badges-section {
+  position: relative;
+  z-index: 2;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.badges-section-header {
+  margin-bottom: 32px;
+}
+
+.badges-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.badges-title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.05;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.badges-title em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.badge-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  overflow: hidden;
+  transition: border-color .25s, background .25s, transform .2s;
+  text-decoration: none;
+  color: #fff;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 120px;
+}
+
+.badge-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: radial-gradient(circle at 50% 0%, rgba(3,233,244,0.06), transparent 70%);
+  opacity: 0;
+  transition: opacity .4s;
+  pointer-events: none;
+}
+
+.badge-item:hover {
+  border-color: rgba(3,233,244,0.35);
+  background: rgba(3,233,244,0.04);
+  transform: translateY(-2px);
+}
+
+.badge-item:hover::before {
+  opacity: 1;
+}
+
+.badge-icon {
+  font-size: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.badge-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gray);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width: 768px) {
+  .badges-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 10px;
+  }
+  .badge-item {
+    padding: 16px 12px;
+    min-height: 100px;
+  }
+  .badge-icon {
+    font-size: 28px;
+  }
+  .badge-name {
+    font-size: 10px;
+  }
+}
+  }
+  </style>
+
+  <div class="badges-section reveal" style="transition-delay:.25s">
+    <!-- Carousel (untouched) -->
+  <div class="carousel-wrap reveal" style="transition-delay:.2s; position:relative;">
+    <!-- ... existing carousel code ... -->
+  </div>
+
+  <!-- BADGES SECTION — Empty for manual updates -->
+  <div class="badges-section reveal" style="transition-delay:.25s">
+    <div class="badges-section-header">
+      <span class="badges-eyebrow">// 02c — Skill <em>Badges</em></span>
+      <h3 class="badges-title">Verified <em>Achievements</em></h3>
+    </div>
+    
+    <!-- EMPTY GRID — Add your badge items here -->
+    <div class="badges-grid" id="<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ace75348-b9ae-440d-a85f-17b778ce3222" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+">
+      <!-- Badge items go here -->
+    </div>
+  </div>
+
+</section>
+  </div>
+<!--/*new badge ends here*/-->
+</section>
 
   <!-- Ambient glows -->
   <div class="certs-glow-wrap">
