@@ -1600,16 +1600,61 @@ footer{position:relative;z-index:10;padding:28px 60px;border-top:1px solid var(-
       <span class="certs-badge cb-cyan">4 Featured Certs</span>
       <span class="certs-badge cb-violet">Google · Coursera · HP LIFE · Cisco</span>
       <span class="certs-badge cb-cyan">Verified &amp; Linked</span>
-    </div>
-    <div class="certs-meta-row">
-      <span class="certs-badge cb-cyan">4 Featured Certs</span>
-      <span class="certs-badge cb-violet">Google · Coursera · HP LIFE · Cisco</span>
-      <span class="certs-badge cb-cyan">Verified &amp; Linked</span>
-    </div>
+       </div>
     <p class="certs-subtitle">
       Hands-on credentials across <em>data analytics</em>, <em>Excel</em>,
       and <em>AI</em> — each verified and publicly linked.
     </p>
+  </div>
+
+  
+  <!-- Progress tracker -->
+  <div class="certs-progress-wrap reveal" style="transition-delay:.1s" id="certs-progress-wrap">
+    <div class="certs-progress-track">
+      <div class="certs-progress-fill" id="certs-prog-fill"></div>
+    </div>
+    <div class="certs-progress-labels">
+      <div class="certs-progress-stat">
+        <div class="certs-progress-num" id="certs-count">0</div>
+        <div class="certs-progress-lbl">Featured</div>
+      </div>
+      <div class="certs-progress-stat">
+        <div class="certs-progress-num">8+</div>
+        <div class="certs-progress-lbl">Total Certs</div>
+      </div>
+      <div class="certs-progress-stat">
+        <div class="certs-progress-num">3</div>
+        <div class="certs-progress-lbl">Platforms</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Issuer chips -->
+  <div class="certs-issuer-strip reveal" style="transition-delay:.15s">
+    <div class="certs-issuer-chip">
+      <img src="Cisco Certification_page-0001.jpg" alt="Cisco"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="chip-fallback">C</span>
+      Cisco Networking Academy
+    </div>
+    <div class="certs-issuer-chip">
+      <img src="googleC.jpg" alt="Google"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="chip-fallback">G</span>
+      Google
+    </div>
+    <div class="certs-issuer-chip">
+      <img src="coursera.jpg" alt="Coursera"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="chip-fallback">C</span>
+      Coursera
+    </div>
+    <div class="certs-issuer-chip">
+      <img src="HPC.jpg" alt="HP LIFE"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="chip-fallback">H</span>
+      HP LIFE
+    </div>
   </div>
 
   <div class="badges-section reveal" style="transition-delay:.25s">
@@ -1741,70 +1786,6 @@ footer{position:relative;z-index:10;padding:28px 60px;border-top:1px solid var(-
 </section>
   </div>
 <!--/*new badge ends here*/-->
-</section>
-
-  <!-- Progress tracker -->
-  <div class="certs-progress-wrap reveal" style="transition-delay:.1s" id="certs-progress-wrap">
-    <div class="certs-progress-track">
-      <div class="certs-progress-fill" id="certs-prog-fill"></div>
-    </div>
-    <div class="certs-progress-labels">
-      <div class="certs-progress-stat">
-        <div class="certs-progress-num" id="certs-count">0</div>
-        <div class="certs-progress-lbl">Featured</div>
-      </div>
-      <div class="certs-progress-stat">
-        <div class="certs-progress-num">8+</div>
-        <div class="certs-progress-lbl">Total Certs</div>
-      </div>
-      <div class="certs-progress-stat">
-        <div class="certs-progress-num">3</div>
-        <div class="certs-progress-lbl">Platforms</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Issuer chips -->
-  <div class="certs-issuer-strip reveal" style="transition-delay:.15s">
-    <div class="certs-issuer-chip">
-      <img src="Cisco Certification_page-0001.jpg" alt="Cisco"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <span class="chip-fallback">C</span>
-      Cisco Networking Academy
-    </div>
-    <div class="certs-issuer-chip">
-      <img src="googleC.jpg" alt="Google"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <span class="chip-fallback">G</span>
-      Google
-    </div>
-    <div class="certs-issuer-chip">
-      <img src="coursera.jpg" alt="Coursera"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <span class="chip-fallback">C</span>
-      Coursera
-    </div>
-    <div class="certs-issuer-chip">
-      <img src="HPC.jpg" alt="HP LIFE"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <span class="chip-fallback">H</span>
-      HP LIFE
-    </div>
-  </div>
-
-  <!-- Carousel (untouched) -->
-  <div class="carousel-wrap reveal" style="transition-delay:.2s; position:relative;">
-    <div class="cert-float-counter">Showing <span id="cert-float-num">1</span> of 4</div>
-    <div class="carousel-scene" id="carousel-scene"></div>
-    <div class="carousel-controls">
-      <button class="car-btn mag" id="car-prev">←</button>
-      <div class="car-dots" id="car-dots"></div>
-      <button class="car-btn mag" id="car-next">→</button>
-      <span class="car-counter" id="car-counter">1 / 4</span>
-    </div>
-  </div>
-
-</section>
 <section id="add-certs" style="padding-top: 20px;">
 
 <style>
